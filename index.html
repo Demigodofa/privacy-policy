@@ -1,27 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Material Guardian</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f1ea;
+      --card: #fffdf8;
+      --text: #1f2428;
+      --muted: #58636e;
+      --line: #d8d1c3;
+      --accent: #8b4b24;
+      --accent-soft: #f4e6dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(180deg, #efe6d7 0%, var(--bg) 45%, #f8f5ef 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .hero,
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(31, 36, 40, 0.06);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(32px, 4vw, 44px);
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .hero p + p,
+    .section p + p,
+    .section ul + p,
+    .section p + ul {
+      margin-top: 12px;
+    }
+
+    .section {
+      padding: 22px 24px;
+      margin-top: 16px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy for Material Guardian</h1>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Material Guardian</div>
+      <h1>Privacy Policy</h1>
+      <p>Material Guardian is an offline-first receiving inspection app. In the current release, jobs, receiving reports, photos, scans, signatures, and exported packet files stay on your device unless you intentionally export or share them.</p>
+      <p>The app now also supports backend-managed account access, organization membership, seats, and store-backed subscription state. This policy reflects that backend-backed release behavior.</p>
+    </section>
 
-  <p>Material Guardian is an offline-first application. We do not collect, store, or transmit personal data to external servers.</p>
+    <section class="section">
+      <h2>What stays on your device</h2>
+      <p>Job content, draft reports, photos, scans, signatures, and exported packets are stored locally on your device in the current release. Cross-device cloud file sync and cloud file recovery are planned for a later opt-in upgrade and are not part of the current release behavior.</p>
+    </section>
 
-  <h2>Data Storage</h2>
-  <p>All data created within the app, including jobs, reports, photos, scans, and signatures, is stored locally on the user’s device.</p>
+    <section class="section">
+      <h2>Account and backend data</h2>
+      <p>If you sign in, Material Guardian may store backend account and access data needed to operate the service, including:</p>
+      <ul>
+        <li>your email address and sign-in session state</li>
+        <li>email-code authentication challenges and session tokens</li>
+        <li>organization membership, seat assignment, and workspace role state</li>
+        <li>subscription and entitlement state linked to Google Play or the App Store when store-backed access is active</li>
+      </ul>
+    </section>
 
-  <h2>Permissions</h2>
-  <p>The app requests access to the device camera solely for capturing photos and scanning materials as part of the inspection workflow.</p>
+    <section class="section">
+      <h2>Camera, scanning, and exports</h2>
+      <p>The app may request camera or document-scanning access only when you choose to capture material photos or scan MTR/CoC documents. Exported files are written to app storage and may also be written to a device-accessible folder such as <strong>Downloads/MaterialGuardian</strong> when you export packets.</p>
+    </section>
 
-  <h2>Data Sharing</h2>
-  <p>The app does not automatically share any data. Users may choose to export files to their device storage or share them using available system share options.</p>
+    <section class="section">
+      <h2>Sharing</h2>
+      <p>Material Guardian does not automatically publish your reports or media. Files are shared only when you explicitly choose an export or system share destination.</p>
+    </section>
 
-  <h2>Third-Party Services</h2>
-  <p>This app does not use third-party analytics, tracking, or data collection services.</p>
+    <section class="section">
+      <h2>Third-party services</h2>
+      <p>Material Guardian does not use third-party analytics or ad tracking in the current release. The service may rely on third-party infrastructure for account and billing operations, such as:</p>
+      <ul>
+        <li>Google Play or the App Store for store-backed subscriptions</li>
+        <li>a configured email delivery provider for sign-in codes, support messages, or workspace invite emails</li>
+        <li>backend hosting and database infrastructure used to run account, entitlement, and organization features</li>
+      </ul>
+    </section>
 
-  <h2>Contact</h2>
-  <p>If you have any questions, contact: granitemfgllc@gmail.com</p>
+    <section class="section">
+      <h2>Account deletion and retention</h2>
+      <p>If account deletion is available in your release channel, use the in-app delete-account flow to remove the backend login tied to your email. Store subscriptions may still need to be canceled separately in Google Play or the App Store.</p>
+      <p>Business workspace records can require additional retention or ownership handling before deletion is allowed. For public deletion guidance, use <a href="./delete-account.html">the account deletion page</a>.</p>
+    </section>
 
+    <section class="section">
+      <h2>Contact</h2>
+      <p>For privacy, support, or account questions, contact <a href="mailto:granitemfgllc@gmail.com">granitemfgllc@gmail.com</a>.</p>
+    </section>
+
+    <p class="footer">Last updated: April 10, 2026</p>
+  </main>
 </body>
 </html>

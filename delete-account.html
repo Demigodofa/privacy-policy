@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete Account - Material Guardian</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f2eb;
+      --card: #fffdf8;
+      --text: #1f2428;
+      --muted: #5f6973;
+      --line: #d8d1c3;
+      --accent: #8b4b24;
+      --warn-bg: #fff0e5;
+      --warn-line: #efc7a9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(31, 36, 40, 0.05);
+      margin-bottom: 16px;
+    }
+
+    .warning {
+      background: var(--warn-bg);
+      border-color: var(--warn-line);
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4vw, 42px);
+    }
+
+    p,
+    li {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    ul,
+    ol {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li,
+    p + p,
+    p + ol,
+    p + ul {
+      margin-top: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Delete Your Material Guardian Account</h1>
+      <p>This page explains the public account-deletion path for Material Guardian.</p>
+    </section>
+
+    <section class="card">
+      <h2>How to delete your account</h2>
+      <ol>
+        <li>Open Material Guardian and sign in with the email tied to the account you want to remove.</li>
+        <li>Open <strong>Account</strong>.</li>
+        <li>Use the in-app <strong>Delete Account</strong> action if it is available in your release channel.</li>
+      </ol>
+    </section>
+
+    <section class="card warning">
+      <h2>Important limits</h2>
+      <ul>
+        <li>Deleting the backend account does not automatically cancel an active Google Play or App Store subscription. Cancel store billing separately in the store that sold the subscription.</li>
+        <li>If you own a paid business workspace, you may need to transfer ownership, remove accepted teammates, or cancel the active workspace subscription before deletion is allowed.</li>
+        <li>Local jobs, reports, photos, scans, signatures, and exported files stored only on your device are under your control on that device. Uninstalling the app or clearing app data can remove local app data.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Need help?</h2>
+      <p>If you cannot complete the in-app deletion flow, contact <a href="mailto:granitemfgllc@gmail.com">granitemfgllc@gmail.com</a> from the email address tied to your Material Guardian account.</p>
+      <p>See the full <a href="./index.html">Privacy Policy</a> for broader information about account, billing, and local-device data handling.</p>
+    </section>
+  </main>
+</body>
+</html>
