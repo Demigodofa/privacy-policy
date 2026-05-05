@@ -10,6 +10,8 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 
 - `index.html`
   - Material Guardian privacy policy page for App Store Connect and Google Play
+- `material-guardian.html`
+  - Material Guardian public landing page for the demo video, Google Play link, and ad traffic
 - `terms.html`
   - Material Guardian public terms-of-use page for App Store subscription review and in-app legal links
 - `delete-account.html`

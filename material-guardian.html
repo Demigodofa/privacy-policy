@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Guardian - Receiving Records, MTRs, and Traceability</title>
+  <meta name="description" content="Material Guardian helps fabrication shops keep receiving records, MTRs, heat numbers, photos, and traceability notes together from the phone.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef2f5;
+      --panel: #ffffff;
+      --ink: #18212a;
+      --muted: #566575;
+      --line: #d7dee6;
+      --blue: #1f5f8f;
+      --blue-dark: #173d5c;
+      --gold: #b57928;
+      --steel: #263746;
+      --soft: #e8f1f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(180deg, #dfe8ef 0%, var(--bg) 42%, #f7f9fb 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 18px 54px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 22px;
+      align-items: center;
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px rgba(24, 33, 42, 0.08);
+    }
+
+    @media (min-width: 860px) {
+      .hero {
+        grid-template-columns: 0.92fr 1.08fr;
+        padding: 34px;
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--blue-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 12ch;
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: clamp(25px, 4vw, 34px);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      margin-top: 16px;
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--blue);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: #f5f8fa;
+      color: var(--blue-dark);
+      border: 1px solid var(--line);
+    }
+
+    .video-card,
+    .section,
+    .note {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(24, 33, 42, 0.06);
+    }
+
+    .video-card {
+      overflow: hidden;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #101820;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-caption {
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    @media (min-width: 760px) {
+      .grid.three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .grid.two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .section {
+      padding: 22px;
+    }
+
+    .section p,
+    .section li,
+    .note p {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 21px;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .metric {
+      border-left: 5px solid var(--gold);
+    }
+
+    .band {
+      margin-top: 18px;
+      padding: 24px;
+      background: var(--steel);
+      color: #ffffff;
+      border-radius: 16px;
+    }
+
+    .band p {
+      color: #dce7ef;
+      max-width: 72ch;
+    }
+
+    .band .button {
+      background: #ffffff;
+      color: var(--steel);
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 18px 20px;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: var(--blue-dark);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Material Guardian</div>
+        <h1>Stop losing MTRs and heat numbers.</h1>
+        <p class="lead">Material Guardian helps fabrication shops keep receiving records, MTRs, photos, and traceability notes together from the phone.</p>
+        <div class="actions">
+          <a class="button primary" href="https://youtu.be/S5v8Rdo_9LQ?si=MPkmQUQ0UD8AhjCZ">Watch demo</a>
+          <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.asme.receiving">Get it on Google Play</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/S5v8Rdo_9LQ" title="Material Guardian demo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">Watch a material receiving packet workflow from the phone.</p>
+      </div>
+    </section>
+
+    <div class="grid three">
+      <section class="section metric">
+        <h3>Keep paperwork with the material</h3>
+        <p>Create a receiving record while the pipe, plate, fitting, or component is still in front of the inspector.</p>
+      </section>
+      <section class="section metric">
+        <h3>Capture the trail early</h3>
+        <p>Add heat numbers, purchase details, MTRs, photos, inspection notes, and QC signoff before the trail gets scattered.</p>
+      </section>
+      <section class="section metric">
+        <h3>Export a packet</h3>
+        <p>Keep job receiving records organized and export documentation when QC, a customer, or the shop needs backup.</p>
+      </section>
+    </div>
+
+    <div class="grid two">
+      <section class="section">
+        <h2>Built for fabrication receiving</h2>
+        <ul>
+          <li>ASME and code-work fabrication shops</li>
+          <li>pipe spool and pressure piping shops</li>
+          <li>vessel, skid, and structural fabrication teams</li>
+          <li>QC managers, receiving inspectors, and shop foremen</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Why it matters</h2>
+        <ul>
+          <li>MTRs get separated from material.</li>
+          <li>Heat numbers end up in photos, texts, or notebooks.</li>
+          <li>Receiving paperwork is hard to rebuild later.</li>
+          <li>Traceability gaps slow release, shipment, and audits.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="band">
+      <h2>Want cleaner receiving records?</h2>
+      <p>Use the Android app to keep material identity, MTRs, photos, and receiving notes organized from the start of the job.</p>
+      <div class="actions">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.asme.receiving">Open Google Play</a>
+        <a class="button" href="mailto:granitemfgllc@gmail.com?subject=Material%20Guardian%20demo">Contact Material Guardian</a>
+      </div>
+    </section>
+
+    <section class="note">
+      <p>Material Guardian is a shop documentation aid. Verify drawings, purchase requirements, material markings, MTRs, customer specifications, and company QC procedures before accepting or releasing material.</p>
+    </section>
+
+    <p class="footer">
+      Related pages:
+      <a href="./index.html">Privacy Policy</a>,
+      <a href="./terms.html">Terms of Use</a>,
+      <a href="./delete-account.html">Delete Account</a>.
+    </p>
+  </main>
+</body>
+</html>
