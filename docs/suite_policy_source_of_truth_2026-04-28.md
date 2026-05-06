@@ -42,7 +42,7 @@ Current public pages:
 - `fabrication-helper.html`
 - `fabrication-helper-terms.html`
 
-Current Android MVP behavior to keep aligned:
+Current Android/iOS MVP behavior to keep aligned:
 
 - paid-up-front local toolbox
 - no account, sign-in, backend entitlement, trial, or in-app unlock
@@ -50,6 +50,7 @@ Current Android MVP behavior to keep aligned:
 - calculator/reference inputs processed locally
 - no ads or analytics SDKs
 - no camera, contacts, microphone, location, broad file storage, or cloud sync in the current MVP
+- 2026-05-06 app repo state: Android AAB artifact branch exists for `fabrication-helper-0.1.0+1`; iOS bundle ID `com.weldershelper.fabricationhelper.ios` is registered and a signed IPA exists, but App Store Connect app-shell creation is still needed before upload/submission.
 
 If Fabrication Helper later adds company cloud records, WPS/WPQ/PQR modules, accounts, export/share, or in-app unlocks, add or update the corresponding public pages before release.
 

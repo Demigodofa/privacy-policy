@@ -18,7 +18,7 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
   - Material Guardian public account-deletion request page for Google Play's required web deletion link
   - also usable as the optional Apple `User Privacy Choices URL` for Material Guardian
 - `fabrication-helper.html`
-  - Fabrication Helper privacy policy page for the paid-up-front local toolbox MVP
+  - Fabrication Helper privacy policy page for the paid-up-front local toolbox MVP on Android and iOS
 - `fabrication-helper-terms.html`
   - Fabrication Helper terms and safety notes page
 
@@ -33,4 +33,5 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 
 - Material Guardian and Fabrication Helper have different current data/billing behavior, so their public pages should stay app-specific where needed.
 - Fabrication Helper's current MVP is a paid-up-front local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
+- 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, signed IPA exported, App Store upload blocked only by missing App Store Connect app shell. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - Before any Play Store or App Store submission, compare the app repo's real behavior to the relevant public page and update both if they drift.
