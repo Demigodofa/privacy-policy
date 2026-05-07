@@ -23,6 +23,8 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
   - Fabrication Helper privacy policy page for the paid-up-front local toolbox MVP on Android and iOS
 - `fabrication-helper-terms.html`
   - Fabrication Helper terms and safety notes page
+- `fabrication-helper-support.html`
+  - Fabrication Helper App Store Support URL page with paid-download, calculator workflow, privacy, and safety-support contact details
 
 ## Internal notes
 
@@ -35,6 +37,6 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 
 - Material Guardian and Fabrication Helper have different current data/billing behavior, so their public pages should stay app-specific where needed.
 - Fabrication Helper's current MVP is a paid-up-front local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
-- 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, signed IPA exported, App Store upload blocked only by missing App Store Connect app shell. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
+- 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, App Store app shell created, and signed IPA upload succeeded through `altool`. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - 2026-05-06 Material Guardian iOS App Review metadata correction: added `support.html` so App Store Connect can use a dedicated Support URL instead of pointing support traffic at the privacy policy root.
 - Before any Play Store or App Store submission, compare the app repo's real behavior to the relevant public page and update both if they drift.
