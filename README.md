@@ -15,7 +15,7 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 - `terms.html`
   - Material Guardian public terms-of-use page for App Store subscription review and in-app legal links
 - `support.html`
-  - Material Guardian App Store Support URL page with account, subscription, scanning, export, and deletion support contact details
+  - Material Guardian support URL page with account, subscription, scanning, export, and deletion support contact details
 - `delete-account.html`
   - Material Guardian public account-deletion request page for Google Play's required web deletion link
   - also usable as the optional Apple `User Privacy Choices URL` for Material Guardian
@@ -39,4 +39,5 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 - Fabrication Helper's current MVP is a paid-up-front local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
 - 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, App Store app shell created, and signed IPA upload succeeded through `altool`. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - 2026-05-06 Material Guardian iOS App Review metadata correction: added `support.html` so App Store Connect can use a dedicated Support URL instead of pointing support traffic at the privacy policy root.
+- 2026-05-11 Material Guardian Apple review cleanup: privacy, support, terms, and delete-account pages now use store-neutral subscription wording so App Store Connect-facing pages do not reference Google Play unless a platform-specific page intentionally does.
 - Before any Play Store or App Store submission, compare the app repo's real behavior to the relevant public page and update both if they drift.
