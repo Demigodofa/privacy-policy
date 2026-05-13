@@ -185,6 +185,23 @@
       background: #ffffff;
     }
 
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .trust-strip span {
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 8px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.11);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
     .wrap {
       width: min(1120px, calc(100% - 36px));
       margin: 0 auto;
@@ -227,6 +244,32 @@
     }
 
     .tool span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .task-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .task {
+      min-height: 128px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .task strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--red-dark);
+      font-size: 15px;
+    }
+
+    .task span {
       color: var(--muted);
       font-size: 14px;
     }
@@ -342,6 +385,7 @@
       }
 
       .tool-grid,
+      .task-grid,
       .screen-grid,
       .proof,
       .notes {
@@ -421,6 +465,43 @@
           <a class="button" href="https://apps.apple.com/us/app/fabrication-helper/id6767084499" rel="noopener">App Store</a>
           <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&amp;referrer=utm_source%3Dfabrication_helper_app_page%26utm_medium%3Dweb%26utm_campaign%3Dfabrication_helper" rel="noopener">Google Play</a>
         </div>
+        <div class="trust-strip" aria-label="Purchase model">
+          <span>$4.99 once</span>
+          <span>No ads</span>
+          <span>No account</span>
+          <span>iPhone + Android</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Use it when the tape measure comes out.</h2>
+          <p>Short answers for common shop and field layout checks, without swapping between web searches and scratch paper.</p>
+        </div>
+        <div class="task-grid">
+          <div class="task">
+            <strong>Add fractions</strong>
+            <span>Combine feet, inches, fractions, decimals, and metric inputs.</span>
+          </div>
+          <div class="task">
+            <strong>Mark equal spaces</strong>
+            <span>Lay out holes, tabs, brackets, rails, and stitch centers.</span>
+          </div>
+          <div class="task">
+            <strong>Plan stick cuts</strong>
+            <span>Check kerf, stock lengths, drops, and order quantities.</span>
+          </div>
+          <div class="task">
+            <strong>Check pipe sizes</strong>
+            <span>Look up common NPS, schedules, OD, wall, and calculated weight.</span>
+          </div>
+          <div class="task">
+            <strong>Lay out bolt circles</strong>
+            <span>Get hole coordinates, angle step, chord spacing, and punch lists.</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -494,16 +575,16 @@
         </div>
         <div class="screen-grid">
           <div class="screen">
-            <img src="./assets/apps/fabrication-helper-01.png" alt="Fabrication Helper fraction calculator">
-            <p>Large calculator controls for shop dimensions.</p>
+            <img src="./assets/apps/fabrication-helper-live-fraction-result.png" alt="Fabrication Helper fraction result showing two and thirteen sixteenths inches">
+            <p>Example: 2 3/8" plus 7/16" gives 2 13/16".</p>
           </div>
           <div class="screen">
-            <img src="./assets/apps/fabrication-helper-02.png" alt="Fabrication Helper linear cut planning screen">
-            <p>Cut planning for stock, order lengths, and drops.</p>
+            <img src="./assets/apps/fabrication-helper-live-equal-spacing.png" alt="Fabrication Helper equal spacing result showing seven marks over seven feet two inches">
+            <p>Example: 7 marks over 7' 2" gives 14 5/16" centers.</p>
           </div>
           <div class="screen">
             <img src="./assets/apps/fabrication-helper-03.png" alt="Fabrication Helper layout tool screen">
-            <p>Layout tools for bolt circles and equal spacing.</p>
+            <p>Layout tools for bolt circles, hole positions, and equal spacing.</p>
           </div>
         </div>
       </div>

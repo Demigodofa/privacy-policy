@@ -26,6 +26,16 @@ QR-tracked URL for printed flyers:
 
 `https://demigodofa.github.io/privacy-policy/fabrication-helper-app.html?utm_source=flyer&utm_medium=qr&utm_campaign=fabrication_helper_499`
 
+## Quick A/B Hooks
+
+Use one hook at a time so the message stays short:
+
+- Feet-inch fraction calculator for shop work.
+- Pipe, cuts, holes, and spacing in one $4.99 app.
+- Shop math without digging through a notebook.
+- Mark equal spaces without redoing the tape math.
+- A no-ads phone toolbox for common fabrication layout checks.
+
 ## Short Text Message
 
 I put my Fabrication Helper app on iPhone and Android. NO ADS, one-time $4.99, no subscription. It has shop calculator tools for fractions, pipe lookup, structural shapes, cuts, bolt circles, and equal spacing.
