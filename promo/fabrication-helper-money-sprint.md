@@ -54,9 +54,25 @@ Current Meta ad state:
 - Dashboard showed `Promoting in 0 of 1`, installs `-`, avg CPI `$0.00`, spend `$0.00`.
 - Apple notes Basic reporting is not real time and recent data may lag by up to three hours.
 
+3:05 PM ET Apple Ads Advanced checkpoint:
+
+- Apple Ads Basic was paused before switching to Advanced.
+- Apple Ads Advanced campaign created: `Fabrication Helper Search Validation 2026-05-13`.
+- Campaign id: `2143852505`.
+- Ad group id: `2148375956`.
+- Placement/country: Search Results, United States.
+- Bid strategy: `Manage Bids`.
+- Budget: `$25.00/day`.
+- Default max CPT bid: `$0.64`.
+- End date: `2026-05-16`.
+- Search Match was turned off and saved after the reporting row showed it as `On`.
+- Keywords: 13 exact/narrow terms for fabrication calculator, feet/inch fractions, pipe charts, bolt circles, equal spacing, cuts, construction/welding calculator, metal fabrication, and layout calculator.
+- The campaign initially showed `On hold` for `App pending review` and `Campaign start date not reached`. The start date was corrected from `May 15, 2026` to `May 13, 2026`; the only visible remaining hold is `App pending review`.
+- Apple Ads Basic showed a `$100 USD` promo credit, but Advanced Billing did not show a confirmed Promo Credit section. Treat this Advanced spend as card-exposed unless Billing later confirms the credit; the active protection is the `$25/day` campaign budget through `2026-05-16`, about `$75` planned maximum exposure.
+
 Next ad check:
 
-1. Confirm Apple Ads changes from `App pending review` to promoting.
+1. Confirm Apple Ads Advanced changes from `App pending review` to serving impressions.
 2. Confirm Meta fully stops the paused boost and does not keep spending.
 3. Do not count the existing two iOS units as validation beyond friend/work support unless a new non-sympathy buyer is identified.
 4. Check Apple Ads, App Store Connect, and any direct outreach notes later today for the first non-courtesy sale signal.
