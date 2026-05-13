@@ -11,9 +11,9 @@ Public app hub:
 - `fabrication-helper-flyer.html`
   - printable letter flyer source
 - `fabrication-helper-social-square.html`
-  - 1080x1080 square social/share image source
+  - 1080x1080 click-first square social/share image source
 - `fabrication-helper-post-pack.md`
-  - copy/paste post text for text messages, Facebook/local trade groups, LinkedIn, shop counter/invoice line, and flyer captions
+  - copy/paste post text for text messages, Facebook/local trade groups, LinkedIn, shop counter/invoice line, flyer captions, and direct store links
 
 ## Generated Public Assets
 
@@ -22,9 +22,9 @@ Public app hub:
 - `../assets/promo/fabrication-helper-flyer-preview.png`
   - PNG preview of the flyer
 - `../assets/promo/fabrication-helper-social-square.png`
-  - square image for Facebook, texts, and general sharing
+  - square image for Facebook, texts, and general sharing; no QR because phone/social viewers need clickable post links
 - `../assets/promo/fabrication-helper-qr.png`
-  - QR code pointing at the app hub with flyer UTM tagging
+  - QR code pointing at the app hub with flyer UTM tagging for printed material
 
 Public URLs:
 

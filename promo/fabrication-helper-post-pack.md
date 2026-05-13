@@ -4,7 +4,16 @@ Canonical promo URL:
 
 `https://demigodofa.github.io/privacy-policy/apps.html`
 
-QR-tracked URL:
+Phone/social tracked URL:
+
+`https://demigodofa.github.io/privacy-policy/apps.html?utm_source=social&utm_medium=post&utm_campaign=fabrication_helper_499`
+
+Direct store links:
+
+- App Store: `https://apps.apple.com/us/app/fabrication-helper/id6767084499`
+- Google Play: `https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dsocial%26utm_medium%3Dpost%26utm_campaign%3Dfabrication_helper_499`
+
+QR-tracked URL for printed flyers:
 
 `https://demigodofa.github.io/privacy-policy/apps.html?utm_source=flyer&utm_medium=qr&utm_campaign=fabrication_helper_499`
 
@@ -12,7 +21,7 @@ QR-tracked URL:
 
 I put my Fabrication Helper app on iPhone and Android. It is a one-time $4.99 shop calculator toolbox for fractions, pipe lookup, structural shapes, linear cut planning, bolt circles, and equal spacing:
 
-https://demigodofa.github.io/privacy-policy/apps.html
+https://demigodofa.github.io/privacy-policy/apps.html?utm_source=text&utm_medium=message&utm_campaign=fabrication_helper_499
 
 ## Facebook / Local Trade Group
 
@@ -30,7 +39,13 @@ Fabrication Helper is available for iPhone and Android. It is a one-time $4.99 t
 It is local-first, with no account, subscription, ads, or cloud sync in the current release.
 
 App links:
-https://demigodofa.github.io/privacy-policy/apps.html
+https://demigodofa.github.io/privacy-policy/apps.html?utm_source=social&utm_medium=post&utm_campaign=fabrication_helper_499
+
+App Store:
+https://apps.apple.com/us/app/fabrication-helper/id6767084499
+
+Google Play:
+https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dsocial%26utm_medium%3Dpost%26utm_campaign%3Dfabrication_helper_499
 
 ## LinkedIn
 
@@ -40,7 +55,7 @@ It is a one-time $4.99 fabrication calculator and reference toolbox built for qu
 
 The current release is local-first: no account, no subscription, no ads, and no cloud sync.
 
-https://demigodofa.github.io/privacy-policy/apps.html
+https://demigodofa.github.io/privacy-policy/apps.html?utm_source=linkedin&utm_medium=post&utm_campaign=fabrication_helper_499
 
 ## Shop Counter / Invoice Line
 
