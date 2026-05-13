@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabrication Helper Flyer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #151b22;
+      --muted: #52606c;
+      --red: #b00822;
+      --navy: #13263a;
+      --line: #d8dde2;
+      --paper: #ffffff;
+      --soft: #f5f7f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: var(--ink);
+      background: #eef1f3;
+      line-height: 1.42;
+    }
+
+    .sheet {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.04fr 0.96fr;
+      min-height: 3.62in;
+      color: #ffffff;
+      background:
+        linear-gradient(90deg, rgba(36, 9, 15, 0.96) 0%, rgba(36, 9, 15, 0.82) 48%, rgba(36, 9, 15, 0.12) 100%),
+        url("../assets/apps/fabrication-helper-01.png") center right / cover no-repeat;
+    }
+
+    .hero-copy {
+      padding: 0.42in 0.42in 0.32in;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 0.12in;
+      margin-bottom: 0.28in;
+      font-weight: 800;
+    }
+
+    .brand-row img {
+      width: 0.48in;
+      height: 0.48in;
+      border-radius: 0.1in;
+      background: #ffffff;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.12in;
+      font-size: 0.14in;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 4.4in;
+      font-size: 0.64in;
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 4.1in;
+      margin-top: 0.16in;
+      font-size: 0.2in;
+      color: #f7ecef;
+    }
+
+    .price {
+      display: inline-flex;
+      margin-top: 0.2in;
+      padding: 0.1in 0.16in;
+      border-radius: 0.08in;
+      background: var(--red);
+      font-size: 0.2in;
+      font-weight: 900;
+    }
+
+    .body {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 0.28in;
+      padding: 0.28in 0.42in 0.2in;
+      background: var(--soft);
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.12in;
+    }
+
+    .tool {
+      min-height: 0.76in;
+      padding: 0.12in;
+      border: 1px solid var(--line);
+      border-radius: 0.08in;
+      background: #ffffff;
+    }
+
+    .tool strong {
+      display: block;
+      margin-bottom: 0.05in;
+      font-size: 0.17in;
+    }
+
+    .tool span {
+      color: var(--muted);
+      font-size: 0.13in;
+    }
+
+    .qr-panel {
+      align-self: start;
+      padding: 0.16in;
+      border: 2px solid var(--navy);
+      border-radius: 0.08in;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .qr-panel h2 {
+      font-size: 0.24in;
+      line-height: 1.05;
+    }
+
+    .qr-panel p {
+      margin-top: 0.08in;
+      color: var(--muted);
+      font-size: 0.13in;
+    }
+
+    .qr {
+      width: 1.72in;
+      height: 1.72in;
+      margin: 0.12in auto 0.08in;
+      image-rendering: pixelated;
+    }
+
+    .url {
+      color: var(--navy);
+      font-size: 0.1in;
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .screen-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.12in;
+      padding: 0 0.42in 0.22in;
+      background: var(--soft);
+    }
+
+    .screen {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 0.08in;
+      background: #ffffff;
+    }
+
+    .screen img {
+      width: 100%;
+      height: 1.08in;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .screen p {
+      padding: 0.1in 0.12in;
+      color: var(--muted);
+      font-size: 0.1in;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.2in;
+      padding: 0.16in 0.42in;
+      color: #ffffff;
+      background: var(--navy);
+      font-size: 0.12in;
+      font-weight: 700;
+    }
+
+    .footer span:last-child {
+      text-align: right;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .sheet {
+        width: 8.5in;
+        min-height: 11in;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="brand-row">
+          <img src="../assets/apps/fabrication-helper-icon.png" alt="">
+          <span>Welders Helper</span>
+        </div>
+        <p class="eyebrow">iPhone and Android</p>
+        <h1>Fabrication Helper</h1>
+        <p class="lead">A one-time $4.99 phone toolbox for layout checks, pipe lookup, cut planning, bolt circles, and equal spacing.</p>
+        <div class="price">$4.99 one-time</div>
+      </div>
+    </section>
+
+    <section class="body">
+      <div>
+        <h2>Shop calculators without the paper scramble.</h2>
+        <div class="tools">
+          <div class="tool">
+            <strong>Fractions</strong>
+            <span>Feet, inches, decimals, and metric conversions.</span>
+          </div>
+          <div class="tool">
+            <strong>Pipe Lookup</strong>
+            <span>Common nominal pipe sizes and schedule aliases.</span>
+          </div>
+          <div class="tool">
+            <strong>Linear Cuts</strong>
+            <span>Stock lengths, saw kerf, drops, and order quantities.</span>
+          </div>
+          <div class="tool">
+            <strong>Layout</strong>
+            <span>Bolt circles and equal spacing for common shop work.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="qr-panel">
+        <h2>Scan to get the app</h2>
+        <p>One page with App Store and Google Play links.</p>
+        <img class="qr" src="../assets/promo/fabrication-helper-qr.png" alt="QR code for Fabrication Helper app page">
+        <div class="url">demigodofa.github.io/privacy-policy/apps.html</div>
+      </aside>
+    </section>
+
+    <section class="screen-row">
+      <div class="screen">
+        <img src="../assets/apps/fabrication-helper-01.png" alt="">
+        <p>Fraction and dimension calculator.</p>
+      </div>
+      <div class="screen">
+        <img src="../assets/apps/fabrication-helper-02.png" alt="">
+        <p>Structural shapes lookup.</p>
+      </div>
+      <div class="screen">
+        <img src="../assets/apps/fabrication-helper-03.png" alt="">
+        <p>Common pipe size lookup.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Fabrication Helper by Welders Helper</span>
+      <span>Always verify against drawings, supplier data, shop procedures, and governing standards.</span>
+    </footer>
+  </main>
+</body>
+</html>

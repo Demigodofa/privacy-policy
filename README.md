@@ -36,11 +36,14 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
   - suite page ownership and app-specific behavior split
 - `release/app-store-compliance-checklist.md`
   - working checklist for Apple App Store and Google Play readiness
+- `promo/`
+  - Fabrication Helper promo source files, post copy, QR flyer, and social image render notes
 
 ## Suite release rule
 
 - Material Guardian and Fabrication Helper have different current data/billing behavior, so their public pages should stay app-specific where needed.
 - Fabrication Helper's current MVP is a paid-up-front local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
+- 2026-05-13 Fabrication Helper promo state: current promotion priority is Fabrication Helper because it is available on both iOS/App Store and Android/Google Play at a one-time `$4.99` price. Public flyer/social assets live under `assets/promo/`, with source files and post copy in `promo/`.
 - 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, App Store app shell created, and signed IPA upload succeeded through `altool`. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - 2026-05-06 Material Guardian iOS App Review metadata correction: added `support.html` so App Store Connect can use a dedicated Support URL instead of pointing support traffic at the privacy policy root.
 - 2026-05-11 Material Guardian Apple review cleanup: privacy, support, terms, and delete-account pages now use store-neutral subscription wording so App Store Connect-facing pages do not reference Google Play unless a platform-specific page intentionally does.
