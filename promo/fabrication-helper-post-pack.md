@@ -64,6 +64,11 @@ https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelpe
 
 ## Facebook / Local Trade Group
 
+Recommended media today:
+
+- Use `assets/promo/fabrication-helper-social-square.png` for a feed image.
+- Use `assets/promo/fabrication-helper-equal-spacing-demo.mp4` when the channel accepts video.
+
 I built a phone app for common shop and field layout checks.
 
 Fabrication Helper is available for iPhone and Android. NO ADS, one-time $4.99, no subscription. It is a toolbox for:
@@ -101,6 +106,24 @@ https://apps.apple.com/us/app/fabrication-helper/id6767084499
 
 Google Play:
 https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dfacebook%26utm_medium%3Dpost%26utm_campaign%3Dfabrication_helper_499
+
+## Meta Ad Starter
+
+Primary text:
+
+Stop redoing tape math on scratch paper. Fabrication Helper is a one-time $4.99 shop calculator for fractions, equal spacing, cut plans, bolt circles, pipe lookup, and structural shapes. No ads. No account.
+
+Headline:
+
+Fabrication Helper
+
+Description:
+
+Shop math for iPhone and Android
+
+Creative:
+
+Use `assets/promo/fabrication-helper-equal-spacing-demo.mp4` first. If a static creative is required, use `assets/promo/fabrication-helper-social-square.png`.
 
 ## LinkedIn
 

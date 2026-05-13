@@ -9,7 +9,8 @@
       color-scheme: light;
       --red: #b00822;
       --navy: #13263a;
-      --ink: #151b22;
+      --ink: #182334;
+      --muted: #566170;
       --line: #d8dde2;
     }
 
@@ -24,7 +25,7 @@
       place-items: center;
       background: #eceff2;
       font-family: "Segoe UI", Tahoma, sans-serif;
-      color: #ffffff;
+      color: var(--ink);
     }
 
     .square {
@@ -33,15 +34,15 @@
       position: relative;
       overflow: hidden;
       background:
-        linear-gradient(180deg, rgba(35, 8, 14, 0.96) 0%, rgba(35, 8, 14, 0.78) 48%, rgba(19, 38, 58, 0.96) 100%),
-        url("../assets/apps/fabrication-helper-01.png") center / cover no-repeat;
+        linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.9) 46%, rgba(238, 242, 246, 0.42) 100%),
+        #eef2f6;
     }
 
     .top {
       position: absolute;
-      top: 52px;
-      left: 62px;
-      right: 62px;
+      top: 48px;
+      left: 56px;
+      right: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -51,23 +52,17 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 16px;
-      font-size: 28px;
+      gap: 14px;
+      font-size: 30px;
       font-weight: 900;
     }
 
-    .brand img {
-      width: 72px;
-      height: 72px;
-      border-radius: 16px;
-      background: #ffffff;
-    }
-
     .price {
-      padding: 14px 22px;
+      padding: 14px 20px;
       border-radius: 8px;
-      background: var(--red);
-      font-size: 28px;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 25px;
       font-weight: 900;
       line-height: 1.05;
       text-align: center;
@@ -75,14 +70,19 @@
 
     .copy {
       position: absolute;
-      left: 62px;
-      right: 62px;
-      top: 190px;
+      left: 56px;
+      top: 158px;
+      width: 540px;
     }
 
     .eyebrow {
-      margin: 0 0 16px;
-      font-size: 50px;
+      display: inline-block;
+      margin: 0 0 20px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: var(--red);
+      color: #ffffff;
+      font-size: 34px;
       font-weight: 900;
       letter-spacing: 0;
       text-transform: uppercase;
@@ -94,67 +94,99 @@
     }
 
     h1 {
-      max-width: 780px;
-      font-size: 98px;
-      line-height: 0.94;
+      max-width: 520px;
+      font-size: 78px;
+      line-height: 0.96;
       letter-spacing: 0;
     }
 
     .lead {
-      max-width: 820px;
+      max-width: 510px;
       margin-top: 24px;
-      font-size: 34px;
-      line-height: 1.22;
+      color: var(--muted);
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.23;
     }
 
-    .tools {
+    .proof {
       position: absolute;
-      left: 62px;
-      right: 62px;
-      bottom: 238px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      left: 56px;
+      bottom: 190px;
+      width: 492px;
+      padding: 24px 26px;
+      border-left: 8px solid var(--red);
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 18px 42px rgba(19, 38, 58, 0.13);
     }
 
-    .tool {
-      min-height: 92px;
-      display: grid;
-      align-items: center;
-      padding: 16px 20px;
-      border: 1px solid rgba(255, 255, 255, 0.44);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.13);
-      font-size: 25px;
+    .proof .problem {
+      color: var(--muted);
+      font-size: 29px;
+      font-weight: 800;
+    }
+
+    .proof .result {
+      margin-top: 6px;
+      font-size: 54px;
       font-weight: 900;
-      text-align: center;
+      line-height: 1;
+    }
+
+    .proof .sub {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .phone {
+      position: absolute;
+      top: 146px;
+      right: 54px;
+      width: 418px;
+      height: 866px;
+      overflow: hidden;
+      border: 10px solid #182334;
+      border-radius: 38px;
+      background: #f2f5f8;
+      box-shadow: 0 22px 52px rgba(19, 38, 58, 0.28);
+    }
+
+    .phone img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: 51% 0%;
     }
 
     .cta {
       position: absolute;
-      left: 62px;
-      right: 62px;
+      left: 56px;
+      right: 518px;
       bottom: 58px;
       display: grid;
       gap: 8px;
       align-items: center;
-      padding: 24px 28px;
+      padding: 22px 24px;
       border-radius: 8px;
-      background: #ffffff;
-      color: var(--ink);
+      background: var(--navy);
+      color: #ffffff;
     }
 
     .cta strong {
       display: block;
-      font-size: 32px;
+      font-size: 31px;
       line-height: 1.1;
     }
 
     .cta span {
       display: block;
       margin-top: 6px;
-      color: #52606c;
-      font-size: 23px;
+      color: #dbe3ea;
+      font-size: 22px;
       font-weight: 700;
     }
   </style>
@@ -163,31 +195,31 @@
   <main class="square">
     <div class="top">
       <div class="brand">
-        <img src="../assets/apps/fabrication-helper-icon.png" alt="">
-        <span>Welders Helper</span>
+        <span>Fabrication Helper</span>
       </div>
-      <div class="price">ONE-TIME $4.99</div>
+      <div class="price">$4.99 once - no ads</div>
     </div>
 
     <section class="copy">
-      <p class="eyebrow">NO ADS</p>
-      <h1>Fabrication Helper</h1>
-      <p class="lead">One-time purchase. No subscription. Tape-measure fractions, pipe lookup, cuts, bolt circles, and equal spacing.</p>
+      <p class="eyebrow">Actual app screen</p>
+      <h1>Tape math without scratch paper.</h1>
+      <p class="lead">Fractions, pipe lookup, cut planning, bolt circles, and equal spacing in one local shop calculator.</p>
     </section>
 
-    <section class="tools">
-      <div class="tool">Fractions</div>
-      <div class="tool">Pipe Lookup</div>
-      <div class="tool">Linear Cuts</div>
-      <div class="tool">Bolt Circles</div>
-      <div class="tool">Equal Spacing</div>
-      <div class="tool">Structural Shapes</div>
+    <section class="proof">
+      <div class="problem">2 3/8&quot; + 7/16&quot;</div>
+      <div class="result">= 2 13/16&quot;</div>
+      <div class="sub">No account. No subscription. iPhone and Android.</div>
     </section>
+
+    <div class="phone">
+      <img src="../assets/apps/fabrication-helper-live-fraction-result.png" alt="Fabrication Helper fraction calculator result">
+    </div>
 
     <section class="cta">
       <div>
-        <strong>Tap the App Store or Google Play link</strong>
-        <span>Phone-first shop calculator for iPhone and Android</span>
+        <strong>Built for quick shop and field checks</strong>
+        <span>App Store and Google Play</span>
       </div>
     </section>
   </main>

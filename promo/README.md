@@ -13,7 +13,9 @@ Use the direct App Store and Google Play links in phone posts when the channel c
 - `fabrication-helper-flyer.html`
   - printable letter flyer source
 - `fabrication-helper-social-square.html`
-  - 1080x1080 click-first square social/share image source emphasizing NO ADS and one-time purchase
+  - 1080x1080 click-first square social/share image source using an actual fraction calculator screen
+- `fabrication-helper-demo-story.html`
+  - 1080x1920 story/reel still source using an actual equal-spacing result screen
 - `fabrication-helper-post-pack.md`
   - copy/paste post text for text messages, Facebook/local trade groups, LinkedIn, shop counter/invoice line, flyer captions, and direct store links
 - `fabrication-helper-money-sprint.md`
@@ -26,7 +28,15 @@ Use the direct App Store and Google Play links in phone posts when the channel c
 - `../assets/promo/fabrication-helper-flyer-preview.png`
   - PNG preview of the flyer
 - `../assets/promo/fabrication-helper-social-square.png`
-  - square image for Facebook, texts, and general sharing; no QR because phone/social viewers need clickable post links
+  - square image for Facebook, texts, and general sharing; uses actual app usage instead of icon-forward branding
+- `../assets/promo/fabrication-helper-demo-story.png`
+  - vertical 1080x1920 story/reel still using the equal-spacing result
+- `../assets/promo/fabrication-helper-equal-spacing-demo.mp4`
+  - native Android emulator recording that opens Equal Spacing, loads the example, scrolls to the result, and taps Copy marks
+- `../assets/apps/fabrication-helper-live-fraction-result.png`
+  - raw emulator screenshot for `2 3/8" + 7/16" = 2 13/16"`
+- `../assets/apps/fabrication-helper-live-equal-spacing.png`
+  - raw emulator screenshot for `7 marks over 7' 2"` with `14 5/16"` spacing
 - `../assets/promo/fabrication-helper-qr.png`
   - QR code pointing at the Fabrication Helper product page with flyer UTM tagging for printed material
 
@@ -34,6 +44,8 @@ Public URLs:
 
 - `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-flyer.pdf`
 - `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-social-square.png`
+- `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-demo-story.png`
+- `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-equal-spacing-demo.mp4`
 - `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-qr.png`
 
 ## Regenerate Assets
@@ -44,5 +56,6 @@ Run from the `privacy-policy` repo root:
 npx playwright pdf --paper-format Letter --viewport-size 816,1056 --wait-for-timeout 500 file:///C:/Users/KevinPenfield/source/repos/Demigodofa/privacy-policy/promo/fabrication-helper-flyer.html assets/promo/fabrication-helper-flyer.pdf
 npx playwright screenshot --viewport-size 816,1056 --wait-for-timeout 500 file:///C:/Users/KevinPenfield/source/repos/Demigodofa/privacy-policy/promo/fabrication-helper-flyer.html assets/promo/fabrication-helper-flyer-preview.png
 npx playwright screenshot --viewport-size 1080,1080 --wait-for-timeout 500 file:///C:/Users/KevinPenfield/source/repos/Demigodofa/privacy-policy/promo/fabrication-helper-social-square.html assets/promo/fabrication-helper-social-square.png
+npx playwright screenshot --viewport-size 1080,1920 --wait-for-timeout 500 file:///C:/Users/KevinPenfield/source/repos/Demigodofa/privacy-policy/promo/fabrication-helper-demo-story.html assets/promo/fabrication-helper-demo-story.png
 npx -y qrcode "https://demigodofa.github.io/privacy-policy/fabrication-helper-app.html?utm_source=flyer&utm_medium=qr&utm_campaign=fabrication_helper_499" -o assets/promo/fabrication-helper-qr.png
 ```
