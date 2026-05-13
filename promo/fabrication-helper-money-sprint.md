@@ -1,6 +1,6 @@
 # Fabrication Helper 7-Day / 100-Download Sprint
 
-Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`, 100 downloads is about `$499` gross store revenue before store fees, taxes, refunds, and ad spend. Lead with no in-app ads, one-time $4.99, and direct phone-store links. Do not change the app binary, add tracking SDKs, discount the app below $4.99, or bundle other apps into this campaign.
+Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`, 100 downloads is about `$499` gross store revenue before store fees, taxes, and refunds. Lead with NO ADS, one-time $4.99, and direct phone-store links. Do not change the app binary, add tracking SDKs, buy paid ad traffic, discount the app below $4.99, or bundle other apps into this campaign.
 
 ## Live Links
 
@@ -14,7 +14,7 @@ Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`
 
 ## Today Target: 5 Sales
 
-- 5 paid downloads at `$4.99` is about `$24.95` gross before store fees, taxes, refunds, and ad spend.
+- 5 paid downloads at `$4.99` is about `$24.95` gross before store fees, taxes, and refunds.
 - Do not wait for ads, algorithms, or search ranking today.
 - The fastest path is direct outreach to people who already understand shop math pain.
 - Use direct App Store and Google Play links when sending from a phone.
@@ -56,30 +56,17 @@ Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`
 5. If a channel produces no sales after two attempts, change the hook before posting there again.
 6. If a channel produces sales, repeat it the next day with a different screenshot or shorter copy.
 
-## Optional Meta Ads Micro-Test
-
-Do this only after the free outreach above is live.
-
-- Objective: traffic to the Fabrication Helper product page, not app-event optimization.
-- Budget: start at `$5` to `$20` per day for 3 days.
-- Placement: use Meta Advantage+ placements so Facebook, Instagram, Reels, Stories, Messenger, and Audience Network can compete for the lowest useful result.
-- Creative 1: `assets/promo/fabrication-helper-social-square.png`
-- Creative 2: a phone-screen demo image or short screen recording once available.
-- Audience: United States, adults, with trade-interest hints around welding, fabrication, pipefitting, metalworking, construction, maintenance, and small contractors.
-- Kill rule: stop or rewrite any ad that gets clicks but no paid downloads after a small paid test budget.
-- Guardrail: do not add the Meta SDK or a mobile measurement partner until Kevin explicitly accepts the tracking/privacy/store-metadata work that comes with app-event optimization.
-
 ## 100-Download Channel Quotas
 
 - Direct texts/messages: target 35 downloads.
 - Personal Facebook and local/trade groups: target 25 downloads.
 - Shop counter, invoice, QR, and in-person referrals: target 20 downloads.
-- Meta micro-test, only if free outreach is live: target 10 downloads.
+- LinkedIn, trade pages, and allowed forum posts: target 10 downloads.
 - App Store / Play organic search and spillover: target 10 downloads.
 
 ## Copy To Say Out Loud
 
-Fabrication Helper is a no-in-app-ads, one-time $4.99 iPhone and Android app for shop math: fractions, pipe lookup, structural shapes, cut planning, bolt circles, and equal spacing. No account, no subscription, and no cloud sync in the current release.
+Fabrication Helper is a NO ADS, one-time $4.99 iPhone and Android app for shop math: fractions, pipe lookup, structural shapes, cut planning, bolt circles, and equal spacing. No account, no subscription, and no cloud sync in the current release.
 
 ## Review Ask
 
