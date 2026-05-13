@@ -44,12 +44,22 @@ Current Meta ad state:
 - Google Play Console was not reachable from the current browser Google account; it opened account creation for `granitemfgllc@gmail.com`.
 - Apple Ads Basic signup is available but still needs account setup fields before an App Store search-ad test can run.
 
+2:25 PM ET Apple Ads checkpoint:
+
+- Apple Ads Basic promotion was created for Fabrication Helper.
+- Budget: `$50.00/month`.
+- Max CPI: `$3.00`.
+- Promo credit shown by Apple Ads: `$100 USD`.
+- Dashboard status after creation: `App pending review`.
+- Dashboard showed `Promoting in 0 of 1`, installs `-`, avg CPI `$0.00`, spend `$0.00`.
+- Apple notes Basic reporting is not real time and recent data may lag by up to three hours.
+
 Next ad check:
 
-1. Confirm Meta fully stops the paused boost and does not keep spending.
-2. If paid traffic continues today, prefer Apple Ads search intent over another Meta engagement boost.
-3. Create Apple Ads only after the legal/contact/payment setup fields are known and keep the test inside the remaining $75 cap unless Kevin explicitly raises it.
-4. Do not count the existing two iOS units as validation beyond friend/work support unless a new non-sympathy buyer is identified.
+1. Confirm Apple Ads changes from `App pending review` to promoting.
+2. Confirm Meta fully stops the paused boost and does not keep spending.
+3. Do not count the existing two iOS units as validation beyond friend/work support unless a new non-sympathy buyer is identified.
+4. Check Apple Ads, App Store Connect, and any direct outreach notes later today for the first non-courtesy sale signal.
 
 ## 7-Day Unit Target
 
