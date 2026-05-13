@@ -35,12 +35,21 @@ Current Meta ad state:
 - Creative path: product-page link preview using `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-social-square.png`.
 - CTA: `No button`, because the boost flow's `Learn more` preview showed `example.com` and no safe URL field was exposed.
 
+2:17 PM ET follow-up:
+
+- Ad Center showed the boost active with `$0.13` spent, 13 reach/views, 0 interactions, and 0 link clicks.
+- Results view showed goal `Get more engagement`, Meta AI text variants, and `No image available`.
+- The boost was paused before it could waste the $75 cap on the wrong objective.
+- App Store Connect Trends showed 2 Fabrication Helper iOS units and `$9.98` sales for Apr 13-May 12, 2026; this does not prove May 13 sales because the dashboard was only current through May 12.
+- Google Play Console was not reachable from the current browser Google account; it opened account creation for `granitemfgllc@gmail.com`.
+- Apple Ads Basic signup is available but still needs account setup fields before an App Store search-ad test can run.
+
 Next ad check:
 
-1. Wait for Meta approval or rejection.
-2. If approved, record spend, reach, interactions, link clicks, App Store units, and Google Play units before changing budget.
-3. If rejected, rebuild the boost from the same organic post or a cleaner link-only post; keep Special Ad Category off unless Meta requires otherwise.
-4. If link clicks are weak after meaningful spend, pause instead of using the full cap.
+1. Confirm Meta fully stops the paused boost and does not keep spending.
+2. If paid traffic continues today, prefer Apple Ads search intent over another Meta engagement boost.
+3. Create Apple Ads only after the legal/contact/payment setup fields are known and keep the test inside the remaining $75 cap unless Kevin explicitly raises it.
+4. Do not count the existing two iOS units as validation beyond friend/work support unless a new non-sympathy buyer is identified.
 
 ## 7-Day Unit Target
 
