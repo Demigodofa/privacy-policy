@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welders Helper Apps - Phone Tools for Shop and Field Work</title>
+  <meta name="description" content="Welders Helper apps give welders, fabricators, inspectors, and QC teams practical phone tools for receiving reports, layout checks, pipe lookup, cut planning, and field documentation.">
+  <meta property="og:title" content="Welders Helper Apps">
+  <meta property="og:description" content="Practical phone apps for shop, field, fabrication, and material documentation work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://demigodofa.github.io/privacy-policy/apps.html">
+  <meta property="og:image" content="https://demigodofa.github.io/privacy-policy/assets/apps/material-guardian-01.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #596675;
+      --page: #f5f7f2;
+      --panel: #ffffff;
+      --line: #d6dde3;
+      --blue: #1f5f8f;
+      --blue-dark: #12364f;
+      --red: #b00822;
+      --gold: #b57928;
+      --green: #2d6b53;
+      --shadow: rgba(23, 33, 43, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: var(--page);
+      color: var(--ink);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .topbar {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px clamp(18px, 4vw, 46px);
+      color: #ffffff;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 14px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav a {
+      text-decoration: none;
+      opacity: 0.92;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(760px, 78vh);
+      display: grid;
+      align-items: end;
+      padding: 104px clamp(18px, 5vw, 62px) 58px;
+      color: #ffffff;
+      background:
+        linear-gradient(90deg, rgba(15, 28, 39, 0.91) 0%, rgba(15, 28, 39, 0.72) 42%, rgba(15, 28, 39, 0.18) 100%),
+        url("./assets/apps/material-guardian-01.jpg") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      max-width: 680px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: #cbd8e2;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(46px, 8vw, 84px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: 0;
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin-top: 18px;
+      max-width: 58ch;
+      font-size: clamp(18px, 2.1vw, 22px);
+      color: #eef4f7;
+      overflow-wrap: break-word;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #ffffff;
+      background: var(--blue);
+    }
+
+    .button.secondary {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .button.light {
+      color: var(--blue-dark);
+      border-color: var(--line);
+      background: #ffffff;
+    }
+
+    .wrap {
+      width: min(1160px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 54px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .section-heading p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .app-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 14px 34px var(--shadow);
+    }
+
+    .app-media {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      min-height: 248px;
+      background: #101b25;
+    }
+
+    .app-icon-pane {
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+
+    .app-icon-pane.blue {
+      background: #102f48;
+    }
+
+    .app-icon-pane.red {
+      background: #58111c;
+    }
+
+    .app-icon-pane img {
+      width: min(168px, 78%);
+      border-radius: 24px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+    }
+
+    .screenshot-stack {
+      position: relative;
+      min-height: 248px;
+      overflow: hidden;
+    }
+
+    .screenshot-stack img {
+      width: 100%;
+      height: 100%;
+      min-height: 248px;
+      object-fit: cover;
+    }
+
+    .app-body {
+      padding: 24px;
+    }
+
+    .app-kicker {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .app-body p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .feature {
+      min-height: 118px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .feature span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .band {
+      padding: 34px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: #173d5c;
+    }
+
+    .band p {
+      max-width: 72ch;
+      margin-top: 10px;
+      color: #e8f0f5;
+      font-size: 18px;
+    }
+
+    .promo-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .promo {
+      min-height: 214px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .promo p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 34px 0 46px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: #ffffff;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: var(--blue-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 860px) {
+      .topbar {
+        position: relative;
+        color: var(--ink);
+        background: #ffffff;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        gap: 10px;
+      }
+
+      .hero {
+        min-height: 620px;
+        padding-top: 58px;
+        background:
+          linear-gradient(180deg, rgba(15, 28, 39, 0.9) 0%, rgba(15, 28, 39, 0.76) 52%, rgba(15, 28, 39, 0.28) 100%),
+          url("./assets/apps/material-guardian-01.jpg") center / cover no-repeat;
+      }
+
+      .app-grid,
+      .feature-list,
+      .promo-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        min-height: 560px;
+        padding: 48px 18px 38px;
+      }
+
+      h1 {
+        font-size: clamp(40px, 12vw, 46px);
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .wrap,
+      .hero-inner,
+      .section-heading {
+        max-width: 354px;
+      }
+
+      .wrap {
+        width: calc(100% - 36px);
+        margin-left: 18px;
+        margin-right: 18px;
+      }
+
+      .lead {
+        max-width: 31ch;
+        font-size: 17px;
+        line-height: 1.45;
+      }
+
+      .app-media {
+        grid-template-columns: 1fr;
+      }
+
+      .app-icon-pane {
+        padding: 22px;
+      }
+
+      .app-icon-pane img {
+        width: 124px;
+        border-radius: 18px;
+      }
+
+      .screenshot-stack,
+      .screenshot-stack img {
+        min-height: 220px;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./apps.html">
+      <img src="./assets/apps/fabrication-helper-icon.png" alt="">
+      <span>Welders Helper</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#apps">Apps</a>
+      <a href="#promote">Share</a>
+      <a href="mailto:granitemfgllc@gmail.com?subject=Welders%20Helper%20apps">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Shop and field phone tools</p>
+        <h1>Welders Helper Apps</h1>
+        <p class="lead">Practical apps for receiving reports, layout checks, pipe lookup, cut planning, and jobsite documentation.</p>
+        <div class="actions">
+          <a class="button" href="#apps">View Apps</a>
+          <a class="button secondary" href="./material-guardian.html">Material Guardian Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Built for the work, not the desk.</h2>
+          <p>Each app stands on its own, but the goal is the same: faster records, cleaner layout checks, and tools that make sense from a phone in the shop or field.</p>
+        </div>
+
+        <div class="app-grid">
+          <article class="app-card">
+            <div class="app-media">
+              <div class="app-icon-pane blue">
+                <img src="./assets/apps/material-guardian-icon.png" alt="Material Guardian app icon">
+              </div>
+              <div class="screenshot-stack">
+                <img src="./assets/apps/material-guardian-01.jpg" alt="Material Guardian phone screen on a shop drawing table">
+              </div>
+            </div>
+            <div class="app-body">
+              <div class="app-kicker">Receiving reports</div>
+              <h3>Material Guardian</h3>
+              <p>Capture material details, heat numbers, MTR status, photos, and receiving notes, then export one company-branded multipage PDF.</p>
+              <div class="actions">
+                <a class="button" href="https://play.google.com/store/apps/details?id=com.asme.receiving&amp;referrer=utm_source%3Dapps_page%26utm_medium%3Dweb%26utm_campaign%3Dwelders_helper_apps" rel="noopener">Google Play</a>
+                <a class="button light" href="./material-guardian.html">Landing Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-media">
+              <div class="app-icon-pane red">
+                <img src="./assets/apps/fabrication-helper-icon.png" alt="Fabrication Helper app icon">
+              </div>
+              <div class="screenshot-stack">
+                <img src="./assets/apps/fabrication-helper-01.png" alt="Fabrication Helper fraction calculator screen">
+              </div>
+            </div>
+            <div class="app-body">
+              <div class="app-kicker">Calculator toolbox</div>
+              <h3>Fabrication Helper</h3>
+              <p>Imperial-first shop tools for fractions, pipe size lookup, structural shapes, linear cut planning, bolt circles, and equal spacing.</p>
+              <div class="actions">
+                <a class="button" href="https://apps.apple.com/us/app/fabrication-helper/id6767084499" rel="noopener">App Store</a>
+                <a class="button light" href="https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&amp;referrer=utm_source%3Dapps_page%26utm_medium%3Dweb%26utm_campaign%3Dwelders_helper_apps" rel="noopener">Google Play</a>
+                <a class="button light" href="./fabrication-helper-app.html">App Page</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="feature-list">
+          <div class="feature">
+            <strong>Phone first</strong>
+            <span>Controls and screens sized for quick use away from a desk.</span>
+          </div>
+          <div class="feature">
+            <strong>Trade focused</strong>
+            <span>Copy, fields, and workflows built around shop and field work.</span>
+          </div>
+          <div class="feature">
+            <strong>Clear records</strong>
+            <span>Reports, lookups, and layout checks designed to reduce paper drift.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="promote">
+      <div class="wrap">
+        <div class="band">
+          <h2>Free promo starting point.</h2>
+          <p>This page is built for free GitHub Pages hosting. Share it in messages, Facebook posts, QR codes, email signatures, Google Ads landing tests, and customer follow-ups.</p>
+          <div class="actions">
+            <a class="button secondary" href="mailto:?subject=Welders%20Helper%20Apps&amp;body=https%3A%2F%2Fdemigodofa.github.io%2Fprivacy-policy%2Fapps.html">Email Link</a>
+            <a class="button secondary" href="./fabrication-helper-app.html">Fabrication Helper</a>
+            <a class="button secondary" href="./material-guardian.html">Material Guardian</a>
+          </div>
+        </div>
+
+        <div class="promo-row">
+          <div class="promo">
+            <h3>Post copy</h3>
+            <p>New phone tools for welders, fabricators, and QC teams. Material Guardian builds receiving report PDFs with photos. Fabrication Helper puts common shop layout and reference calculators in your pocket.</p>
+          </div>
+          <div class="promo">
+            <h3>QR code target</h3>
+            <p>Use this page as the first QR destination on invoices, job folders, flyers, shop counters, and demo messages. It can route people to each live store link from one stable URL.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Welders Helper</strong>
+      <p>Apps by Kevin Penfield for shop, field, fabrication, and material documentation workflows.</p>
+      <div class="footer-links">
+        <a href="./material-guardian.html">Material Guardian</a>
+        <a href="./fabrication-helper-app.html">Fabrication Helper</a>
+        <a href="./index.html">Material Guardian Privacy</a>
+        <a href="./fabrication-helper.html">Fabrication Helper Privacy</a>
+        <a href="mailto:granitemfgllc@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -8,6 +8,8 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 
 ## Pages
 
+- `apps.html`
+  - Welders Helper public app hub for free GitHub Pages promotion and cross-app store routing
 - `index.html`
   - Material Guardian privacy policy page for App Store Connect and Google Play
 - `material-guardian.html`
@@ -21,6 +23,8 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
   - also usable as the optional Apple `User Privacy Choices URL` for Material Guardian
 - `fabrication-helper.html`
   - Fabrication Helper privacy policy page for the paid-up-front local toolbox MVP on Android and iOS
+- `fabrication-helper-app.html`
+  - Fabrication Helper public landing page for App Store, Google Play, screenshots, and shop-facing promo copy
 - `fabrication-helper-terms.html`
   - Fabrication Helper terms and safety notes page
 - `fabrication-helper-support.html`
