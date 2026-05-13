@@ -19,6 +19,29 @@ Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`
 - The fastest path is direct outreach to people who already understand shop math pain.
 - Use direct App Store and Google Play links when sending from a phone.
 
+## 2026-05-13 Paid Boost Checkpoint
+
+Live organic post to boost:
+
+- `https://www.facebook.com/61589319017176/posts/122102467689310633`
+
+Current Meta ad state:
+
+- Submitted through Facebook Ad Center on 2026-05-13.
+- Verified status in Ad Center at 12:51 PM ET: `In review`.
+- Budget cap: `$75.00 USD` total.
+- Schedule shown by Meta: `$25.00/day` for 3 days, ending 2026-05-16.
+- Goal shown after submission: `Get more interactions`.
+- Creative path: product-page link preview using `https://demigodofa.github.io/privacy-policy/assets/promo/fabrication-helper-social-square.png`.
+- CTA: `No button`, because the boost flow's `Learn more` preview showed `example.com` and no safe URL field was exposed.
+
+Next ad check:
+
+1. Wait for Meta approval or rejection.
+2. If approved, record spend, reach, interactions, link clicks, App Store units, and Google Play units before changing budget.
+3. If rejected, rebuild the boost from the same organic post or a cleaner link-only post; keep Special Ad Category off unless Meta requires otherwise.
+4. If link clicks are weak after meaningful spend, pause instead of using the full cap.
+
 ## 7-Day Unit Target
 
 - Day 1: 5 downloads
