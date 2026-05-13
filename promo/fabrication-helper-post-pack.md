@@ -36,6 +36,20 @@ https://apps.apple.com/us/app/fabrication-helper/id6767084499
 Google Play:
 https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dtext%26utm_medium%3Dmessage%26utm_campaign%3Dfabrication_helper_499
 
+## Today: First 5 Sales Ask
+
+I am trying to get the first 5 Fabrication Helper sales today.
+
+It is a no-in-app-ads, one-time $4.99 iPhone and Android shop calculator for fractions, pipe lookup, structural shapes, cut planning, bolt circles, and equal spacing.
+
+If that is useful for your work, buy it and tell me what should be clearer after you use it.
+
+App Store:
+https://apps.apple.com/us/app/fabrication-helper/id6767084499
+
+Google Play:
+https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dfirst5%26utm_medium%3Dmessage%26utm_campaign%3Dfabrication_helper_499
+
 ## Direct Ask
 
 I built this because I wanted the common shop math in one quick phone app instead of bouncing between scratch paper, web searches, and a desktop calculator.

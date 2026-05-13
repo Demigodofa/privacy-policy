@@ -17,7 +17,7 @@ Use the direct App Store and Google Play links in phone posts when the channel c
 - `fabrication-helper-post-pack.md`
   - copy/paste post text for text messages, Facebook/local trade groups, LinkedIn, shop counter/invoice line, flyer captions, and direct store links
 - `fabrication-helper-money-sprint.md`
-  - 48-hour revenue checklist with exact channels, links, review ask boundaries, and daily metrics
+  - 7-day / 100-download revenue checklist with a 5-sales-today target, exact channels, links, review ask boundaries, daily targets, and a no-SDK Meta micro-test
 
 ## Generated Public Assets
 

@@ -1,6 +1,6 @@
-# Fabrication Helper 48-Hour Revenue Sprint
+# Fabrication Helper 7-Day / 100-Download Sprint
 
-Goal: get the first real paid users and honest reviews by leading with no in-app ads, one-time $4.99, and direct phone-store links. Do not change the app binary, add tracking SDKs, discount the app below $4.99, or bundle other apps into this campaign.
+Goal: 100 paid downloads in 7 days, starting with 5 paid sales today. At `$4.99`, 100 downloads is about `$499` gross store revenue before store fees, taxes, refunds, and ad spend. Lead with no in-app ads, one-time $4.99, and direct phone-store links. Do not change the app binary, add tracking SDKs, discount the app below $4.99, or bundle other apps into this campaign.
 
 ## Live Links
 
@@ -12,14 +12,32 @@ Goal: get the first real paid users and honest reviews by leading with no in-app
 - Google Play social referrer: `https://play.google.com/store/apps/details?id=com.weldershelper.fabricationhelper&referrer=utm_source%3Dsocial%26utm_medium%3Dpost%26utm_campaign%3Dfabrication_helper_499`
 - App Store: `https://apps.apple.com/us/app/fabrication-helper/id6767084499`
 
+## Today Target: 5 Sales
+
+- 5 paid downloads at `$4.99` is about `$24.95` gross before store fees, taxes, refunds, and ad spend.
+- Do not wait for ads, algorithms, or search ranking today.
+- The fastest path is direct outreach to people who already understand shop math pain.
+- Use direct App Store and Google Play links when sending from a phone.
+
+## 7-Day Unit Target
+
+- Day 1: 5 downloads
+- Day 2: 10 downloads
+- Day 3: 15 downloads
+- Day 4: 15 downloads
+- Day 5: 15 downloads
+- Day 6: 20 downloads
+- Day 7: 20 downloads
+- Weekly total: 100 downloads
+
 ## Day 1
 
-1. Text 20 people who understand shop, welding, pipe, maintenance, construction, or field layout work.
+1. Text 30 people who understand shop, welding, pipe, maintenance, construction, or field layout work.
 2. Post once in personal Facebook, one local trade group, and one welding/fabrication group where app/self-promo rules allow it.
 3. Use both direct store links in phone posts whenever the channel allows it.
 4. Optional physical-only step: print 10 flyers for shop counters, break rooms, welding tables, job folder racks, material receiving desks, or quote/invoice packets.
 5. Add the email signature line from `fabrication-helper-post-pack.md` to outgoing shop/customer email.
-6. Send the direct ask copy to 5 people who are likely to give useful feedback after buying.
+6. Send the direct ask copy to 10 people who are likely to give useful feedback after buying.
 
 ## Day 2
 
@@ -28,6 +46,15 @@ Goal: get the first real paid users and honest reviews by leading with no in-app
 3. If someone used the app, ask for an honest review. Do not offer incentives or ask for a positive review.
 4. Check Play Console and App Store Connect for paid units, refunds, crashes, and review wording.
 5. Write down the exact channel for every known sale so the next push repeats what worked.
+
+## Days 3 To 7
+
+1. Send 20 new direct messages per day to real trade contacts, suppliers, shops, small contractors, mobile welders, maintenance crews, and instructors.
+2. Post one useful demo-style update per day, not the same ad copy every time.
+3. Put the link in outgoing estimates, invoices, quotes, email signatures, and job paperwork.
+4. Ask every real buyer for feedback after use; ask for an honest review only after they have used it.
+5. If a channel produces no sales after two attempts, change the hook before posting there again.
+6. If a channel produces sales, repeat it the next day with a different screenshot or shorter copy.
 
 ## Optional Meta Ads Micro-Test
 
@@ -42,6 +69,14 @@ Do this only after the free outreach above is live.
 - Kill rule: stop or rewrite any ad that gets clicks but no paid downloads after a small paid test budget.
 - Guardrail: do not add the Meta SDK or a mobile measurement partner until Kevin explicitly accepts the tracking/privacy/store-metadata work that comes with app-event optimization.
 
+## 100-Download Channel Quotas
+
+- Direct texts/messages: target 35 downloads.
+- Personal Facebook and local/trade groups: target 25 downloads.
+- Shop counter, invoice, QR, and in-person referrals: target 20 downloads.
+- Meta micro-test, only if free outreach is live: target 10 downloads.
+- App Store / Play organic search and spillover: target 10 downloads.
+
 ## Copy To Say Out Loud
 
 Fabrication Helper is a no-in-app-ads, one-time $4.99 iPhone and Android app for shop math: fractions, pipe lookup, structural shapes, cut planning, bolt circles, and equal spacing. No account, no subscription, and no cloud sync in the current release.
@@ -52,8 +87,12 @@ If you buy it and use it on a real job, an honest store review would help a lot 
 
 ## Daily Scoreboard
 
+- Day:
 - App Store units:
 - Google Play units:
+- Daily units:
+- Weekly units:
+- Gross before fees:
 - Refunds:
 - Reviews:
 - Best channel:
