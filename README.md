@@ -13,7 +13,7 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 - `index.html`
   - Material Guardian privacy policy page for App Store Connect and Google Play
 - `material-guardian.html`
-  - Material Guardian public landing page for the demo video, Google Play link, and ad traffic
+  - Material Guardian public landing page for the demo video, App Store and Google Play links, and ad traffic
 - `terms.html`
   - Material Guardian public terms-of-use page for App Store subscription review and in-app legal links
 - `support.html`
@@ -47,4 +47,5 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 - 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, App Store app shell created, and signed IPA upload succeeded through `altool`. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - 2026-05-06 Material Guardian iOS App Review metadata correction: added `support.html` so App Store Connect can use a dedicated Support URL instead of pointing support traffic at the privacy policy root.
 - 2026-05-11 Material Guardian Apple review cleanup: privacy, support, terms, and delete-account pages now use store-neutral subscription wording so App Store Connect-facing pages do not reference Google Play unless a platform-specific page intentionally does.
+- 2026-05-14 Material Guardian availability update: Material Guardian is now publicly reachable on both App Store and Google Play. The landing page should send traffic to `https://apps.apple.com/us/app/material-guardian/id6764147952` and `https://play.google.com/store/apps/details?id=com.asme.receiving`.
 - Before any Play Store or App Store submission, compare the app repo's real behavior to the relevant public page and update both if they drift.
