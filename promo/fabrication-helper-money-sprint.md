@@ -70,9 +70,21 @@ Current Meta ad state:
 - The campaign initially showed `On hold` for `App pending review` and `Campaign start date not reached`. The start date was corrected from `May 15, 2026` to `May 13, 2026`; the only visible remaining hold is `App pending review`.
 - Apple Ads Basic showed a `$100 USD` promo credit, but Advanced Billing did not show a confirmed Promo Credit section. Treat this Advanced spend as card-exposed unless Billing later confirms the credit; the active protection is the `$25/day` campaign budget through `2026-05-16`, about `$75` planned maximum exposure.
 
+2026-05-14 morning ads check:
+
+- At about 7:56 AM ET, the Advanced campaign and ad group both showed `Running`.
+- All 13 exact/narrow keywords showed `Running`.
+- Search Match remained `Off`.
+- Default max CPT remained `$0.64`.
+- Last 7 days report still showed `$0.00` spend, `0` impressions, `0` taps, and `0` installs.
+- This indicates no Apple Ads delivery overnight rather than a conversion failure.
+- App Store Connect Trends for `May 13 - 14, 2026` showed `0` app units for iOS/macOS app purchases.
+- Meta Business Suite showed the boosted Facebook post was still `Paused`, with `$0.21` total spend, 42 ad views/viewers, 0 interactions, and 0 ad link clicks.
+- The Meta ad preview still displayed `No image available`.
+
 Next ad check:
 
-1. Confirm Apple Ads Advanced changes from `App pending review` to serving impressions.
+1. Check whether Apple Ads Advanced starts serving impressions; if it stays at zero, loosen only one variable at a time, such as bid, keyword match breadth, or listing relevance.
 2. Confirm Meta fully stops the paused boost and does not keep spending.
 3. Do not count the existing two iOS units as validation beyond friend/work support unless a new non-sympathy buyer is identified.
 4. Check Apple Ads, App Store Connect, and any direct outreach notes later today for the first non-courtesy sale signal.
