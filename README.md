@@ -9,26 +9,25 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 ## Pages
 
 - `apps.html`
-  - Fabrication Helper-only public app page for the current no-ads, one-time-purchase promotion; do not lump Material Guardian into this campaign yet
+  - Fabrication Helper-only public app page for the current free, no-ads release
 - `index.html`
   - Material Guardian privacy policy page for App Store Connect and Google Play
 - `material-guardian.html`
-  - Material Guardian public landing page for the demo video, App Store and Google Play links, and ad traffic
+  - Material Guardian public landing page for the demo video and free App Store and Google Play links
 - `terms.html`
-  - Material Guardian public terms-of-use page for App Store subscription review and in-app legal links
+  - Material Guardian public terms-of-use page for the free local-only release
 - `support.html`
-  - Material Guardian support URL page with account, subscription, scanning, export, and deletion support contact details
+  - Material Guardian support URL page with local workflow, scanning, export, and troubleshooting details
 - `delete-account.html`
-  - Material Guardian public account-deletion request page for Google Play's required web deletion link
-  - also usable as the optional Apple `User Privacy Choices URL` for Material Guardian
+  - Material Guardian former-account notice retained while older hosted records are deleted
 - `fabrication-helper.html`
-  - Fabrication Helper privacy policy page for the paid-up-front local toolbox MVP on Android and iOS
+  - Fabrication Helper privacy policy page for the free local toolbox on Android and iOS
 - `fabrication-helper-app.html`
   - Fabrication Helper public landing page for App Store, Google Play, screenshots, and shop-facing promo copy
 - `fabrication-helper-terms.html`
   - Fabrication Helper terms and safety notes page
 - `fabrication-helper-support.html`
-  - Fabrication Helper App Store Support URL page with paid-download, calculator workflow, privacy, and safety-support contact details
+  - Fabrication Helper App Store Support URL page with free-download, calculator workflow, privacy, and safety-support contact details
 
 ## Internal notes
 
@@ -41,8 +40,9 @@ Commit and push coherent GitHub checkpoints after policy wording, app page, stor
 
 ## Suite release rule
 
-- Material Guardian and Fabrication Helper have different current data/billing behavior, so their public pages should stay app-specific where needed.
-- Fabrication Helper's current MVP is a paid-up-front local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
+- Material Guardian and Fabrication Helper are free and local-only, while their public pages remain app-specific for actual product behavior.
+- Fabrication Helper is a free local toolbox with no account, backend entitlement, trial, subscription, cloud sync, ads, analytics SDK, or in-app unlock behavior unless its app repo says otherwise.
+- 2026-09-02 suite update: Material Guardian and Fabrication Helper moved to free distribution. Material Guardian's former account, subscription, email, database, and hosted-backend runtime is being retired.
 - 2026-05-13 Fabrication Helper promo state: current promotion priority is Fabrication Helper because it is available on both iOS/App Store and Android/Google Play at a one-time `$4.99` price with no ads. Phone/social links should use `fabrication-helper-app.html` plus direct App Store and Google Play links; Material Guardian should not be bundled into this promotion yet. Public flyer/social assets live under `assets/promo/`, with source files and post copy in `promo/`.
 - 2026-05-06 Fabrication Helper iOS state: bundle ID `com.weldershelper.fabricationhelper.ios`, App Store app shell created, and signed IPA upload succeeded through `altool`. Privacy behavior still matches the local-toolbox page: selected-tool preferences use local storage; calculator/reference inputs stay on device; no camera, location, contacts, microphone, analytics, or account backend in the current app.
 - 2026-05-06 Material Guardian iOS App Review metadata correction: added `support.html` so App Store Connect can use a dedicated Support URL instead of pointing support traffic at the privacy policy root.
